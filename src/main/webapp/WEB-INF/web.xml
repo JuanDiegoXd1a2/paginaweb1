@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee
+                       https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
+   version="6.0">
+
+    <session-config>
+        <session-timeout>30</session-timeout>
+    </session-config>
+
+    <!-- ── Login ─────────────────────────────────────── -->
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>servlets.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/LoginServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- ── Asociados ─────────────────────────────────── -->
+    <servlet>
+        <servlet-name>AsociadosServlet</servlet-name>
+        <servlet-class>servlets.AsociadosServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AsociadosServlet</servlet-name>
+        <url-pattern>/AsociadosServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- ── Préstamos ─────────────────────────────────── -->
+    <servlet>
+        <servlet-name>PrestamosServlet</servlet-name>
+        <servlet-class>servlets.PrestamosServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>PrestamosServlet</servlet-name>
+        <url-pattern>/PrestamosServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- ── Cuotas ────────────────────────────────────── -->
+    <servlet>
+        <servlet-name>CuotasServlet</servlet-name>
+        <servlet-class>servlets.CuotasServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CuotasServlet</servlet-name>
+        <url-pattern>/CuotasServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- ── Reportes ──────────────────────────────────── -->
+    <servlet>
+        <servlet-name>ReportesServlet</servlet-name>
+        <servlet-class>servlets.ReportesServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ReportesServlet</servlet-name>
+        <url-pattern>/ReportesServlet</url-pattern>
+    </servlet-mapping>
+
+</web-app>
